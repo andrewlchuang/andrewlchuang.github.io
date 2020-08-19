@@ -1,0 +1,439 @@
+<html lang="en">
+<html>
+<head>
+    <title>Food Truck Responsive Web Design</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="All about responsive web design project for food trucks">
+    <meta name="author" content="Andrew Chuang">
+    
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"> </script>
+    
+    <!-- fa fa icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- own customizations-->
+    <link rel="stylesheet" type="text/css" href="front.css">
+</head>
+<body>
+    
+    <!-- navigation element-->
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">🌏</a>
+        </div>
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="ACpfResume.pdf">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- cover photo -->
+    <!-- real intro -->
+    <div class="container header">
+        
+        <!-- cover photo -->
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="wrap-img">
+                <img class="intro-photo hover-photo" src="img/food%20truck%20page%20cover.png" alt="Cover photo for responsive web page project">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: A page from the responsive web application that shows the business page for the Little Lotus restaurant.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- overview-->
+        <div class="row overview">
+                <div class="col-md-12 col-sm-12">
+                    <h1 class="project-title">Food Truck Responsive Web Design</h1>
+                    <p class="description">Fall 2019 | 5 Weeks </p>
+                    <p class="prompt">"How might we connect hungry patrons to food trucks that fit their needs and restrictions?"</p>
+                    <p class="background-info">With a market worth over $1 billion and 6.8 percent growth from the past five years, the food truck market is thriving, offering customers quality meals centered around convenience. However, patrons often do not know which trucks fit their needs and constraints, given that an area can have many trucks.</p>
+                    <p class="background-info">In this team project with members <b>Evelyn Yu</b>, <b>Ruwen You</b>, and <b>Sprina Wu</b>, we designed a responsive web application that centralizes information, such as cuisine served and opening hours, into one spot where patrons can access. With varying patron constraints in mind, users can dine good while having time, dietary and/or budgetary needs met. </p>
+                    <p class="more-info">This project was done for the Interaction Design Overview Course (05-392) at Carnegie Mellon. <mark>To skip directly to the final deliverable, please click <b><a href="#final">here</a></b>.</mark></p>
+                </div>
+        </div>
+        
+        <!-- role I played-->
+        <div class="row role">
+            <div class="col-md-12 col-sm-12">
+                <h2 class="title">My Role</h2>
+                <p class="role-description">In this project, I was a <b>User Experience Designer</b> and worked alongside my teammates each step of the way, from interpreting interview notes to creating the many iterations of the application. Majority of the tasks we did involved the following: experience design (including wireframing and prototyping) and conducting think alouds for usability testing.</p>
+            </div>
+        </div>
+        
+        <!-- process overview-->
+        <div class="row sec">
+            <div class="col-md-12">
+                <h2 class="title">Process Overview</h2>
+                <p class="scrip">The following lists what we've done in order to reach our final responsive website designs: <a href="#understand">understanding the users</a>, making <a href="#sketch">sketches and wireframes</a>, <a href="#think">conducting think alouds for usability testing</a>, and <a href="changes">making changes</a> based off of feedback from the previous two activities. 
+            </div>
+        </div>
+        
+        <!-- understanding the users -->
+        <div class="row sec" id="understand">
+            <div class="col-md-12">
+                <h2 class="title">Understanding Our Users</h2>
+                <p class="scrip">To kick off the project, we were given food truck user research (observations, interviews, affinity diagrams, personas) from another team. We were asked to use their insights to shape our design. The diagram on the bottom left shows some examples of customers we are targeting.</p>
+                <p class="scrip">Since we did not conduct the research ourselves (since the research we've conducted was handed off to another group), we used a Venn diagram to synthesize information given + better understand the three key players in the food truck market: patrons, owners, and employees.</p>
+            </div>
+        </div>
+        <div class="row ft-diagram">
+            <div class="col-md-3">
+                <p class="scrip" style="text-decoration: underline; font-weight: bold">Customers are interested in...</p>
+                <ul>
+                    <li class="scrip">Cheaper food</li>
+                    <li class="scrip">Businesses located in convenient locations</li>
+                    <li class="scrip">High quality + variety of foods, compared with nearby restaurants</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <p class="scrip" style="text-decoration: underline; font-weight: bold">Truck owners are interested in...</p>
+                <ul>
+                    <li class="scrip">Higher returns/profits</li>
+                    <li class="scrip">More business opportunities</li>
+                    <li class="scrip">An established brand name, distinct from other businesses</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <p class="scrip" style="text-decoration: underline; font-weight: bold">Employees are interested in...</p>
+                <ul>
+                    <li class="scrip">Pay that corresponds reasonably with work put in</li>
+                    <li class="scrip">Having good working conditions, including solid work-life balance</li>
+                    <li class="scrip">Earning money</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <p class="scrip" style="text-decoration: underline; font-weight: bold">Some commonalities the groups share is...</p>
+                <ul>
+                    <li class="scrip">Accessing information easily (e.g. where customers/trucks are)</li>
+                    <li class="scrip">Good reputation/brand name</li>
+                    <li class="scrip">More personal recognition</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row ft-images">
+            <div class="col-md-6">
+                <div class="wrap-img">
+                    <img src="img/Food%20truck%20personas.jpg", alt="Personas from previous user research to be used in project", class="hover-photo">
+                    <div class="hvr">
+                        <p clss="img-descr"><b>Caption</b>: Personas of three individuals who are patrons of food trucks</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="wrap-img">
+                    <img src="img/venn.jpg", alt="Venn diagram used to synthesize information from prev research", class="venn hover-photo">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: Venn diagram used to synthesize information from the previous team's research. Most of what's in the diagram is written above.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- sketches -->
+        <div class="row sec" id="sketch">
+            <div class="col-md-12">
+                <h2 class="title">Initial Sketches and Wireframes</h2>
+                <p class="scrip">Given that there were three key players in the field, we decided to focus on designing the application for <b>customers</b> since the research we received had more interviews and information regarding those who patronize food trucks. With that in mind, we started sketching our application on paper. We designed for mobile first since it is easier to scale up than the scale down.</p>
+                <div class="wrap-img">
+                    <img src="img/initial%20sketches.PNG" alt="initial sketches of the food truck web application" class="hover-photo" style="max-width:100%; border-radius: 10px; margin: 20px 0px 20px 0px;">
+                    <div class=hvr>
+                        <p class="img-descr"><b>Caption</b>: Initial black-white sketches of the application. Given that customers prioritize quality, convenience, and/or cost, we decided to focus on fleshing out our filter function.</p>
+                    </div>
+                </div>
+                <p class="scrip">Following our black and white sketch, we created more pages for search, ﬁlter, and navigation. In this stage we converted our original sketch into a wireframe with interactive task ﬂows using Adobe XD. This will make user testing much smoother.</p>
+                 <!-- slideshow code from www3schools -->
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                  <!-- Full-width images with number-->
+                  <div class="mySlides1 fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="img/wireframes1.PNG" style="width:100%; margin-top: 20px;" alt="first panel of black and white wireframe for app">
+                  </div>
+
+                  <div class="mySlides1 fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="img/wireframes2.PNG" style="width:100%; margin-top: 20px;" alt="second panel of black and white wireframe for app">
+                  </div>
+
+                  <div class="mySlides1 fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="img/wireframes3.PNG" style="width:100%; margin-top: 20px;" alt="third panel of black and white wireframe for app">
+                  </div>
+
+                  <!-- Next and previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                  <span class="dot1" onclick="currentSlide(1, 0)"></span>
+                  <span class="dot1" onclick="currentSlide(2, 0)"></span>
+                  <span class="dot1" onclick="currentSlide(3, 0)"></span>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- think aloud -->
+        <div class="row sec" id="think">
+            <div class="col-md-12">
+                <h2 class="title">Think Aloud Protocol for Usability Testing</h2>
+                <p class="scrip">Using the think-aloud protocol, we tested our low-fidelity prototype with five other individuals. We asked users to think aloud as they performed the following tasks:</p>
+                <ul>
+                    <li class="scrip">There is only 25 mins left before class, please identify the truck you want to go to.</li>
+                    <li class="scrip"> Your parents are in town. They want to eat some Chinese food. Please find a food truck to go.</li>
+                    <li class="scrip">Now the food truck Kiki Donut is in town and you heard it’s pretty good. It’s 10:55 and you are having a class at 11:20. You’re wondering whether you can get it or not.</li>
+                    <li class="scrip">You heard the panda donuts in Kiki Donut are really good but you have only 5 dollars left. How can you find out whether you can afford it or not?</li>
+                </ul>
+                <p class="scrip">Here is a summary on what we did well/not-so-well at this stage:</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="scrip" style="text-decoration: underline"><b>Strengths:</b></p>
+                <ul>
+                    <li class="scrip">Trucks were easily identiﬁable, location of user was made clear</li>
+                    <li class="scrip">Searching for trucks, identifying item and price of menu item were some of our strongest features</li>
+                    <li class="scrip">Core functionalities easily identiﬁable and usable</li>
+                    <ul>
+                        <li class="scrip">Other than the fact that some features were not implemented on the wireframe, there was no struggle accessing features on the wireframe</li>
+                        <li class="scrip">Overarching feedback: no outright difficult task</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <p class="scrip" style="text-decoration: underline"><b>Weaknesses:</b></p>
+                <ul>
+                    <li class="scrip">Primary Concern: Supporting/non-core functionality icons lacked clarity</li>
+                    <ul>
+                        <li class="scrip">Numbers are present with no explanation</li>
+                        <li class="scrip">Legend lacked clarity</li>
+                        <li class="scrip">Confusion regarding arrow on bottom page</li>
+                        <li class="scrip">Calculation of “distance” is not clear</li>
+                        
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        
+        <!--changes made-->
+        <div class="row sec" id="changes">
+            <div class="col-md-12">
+                <h2 class="title">Changes Made</h2>
+                <p class="scrip">With verbal feedback and observational feedback from the think-alouds, in addition to advice from the instructor, we made changes to the following areas to mitigate confusions and create a more continuous flow:</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-9">
+                <div class="wrap-img">
+                <img src="img/wireframe%20changes.PNG" alt="changes we made to our wireframes" class="hover-photo" style="max-width: 100%; margin-bottom: 20px">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: Previous wireframes with areas of improvements boxed in yellow.</p>    
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="wrap-img">
+                <img src="img/tutorial%20screen.PNG" alt="tutorial screen added to the first page of the app" class="hover-photo" style="max-width: 100%; margin-bottom: 20px">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: Tutorial screen shown to users when they enter application. Useful in understanding what the truck icons represent.</p>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <ul>
+                <li class="scrip"><b>Removed the arrow at the bottom of the map</b> <i>(left panel of wireframe)</i> : We tried reﬁning this feature by labeling it but realized that users did not use this feature intentionally and that the feature did not ﬁt in with our main objective of cutting down time users take to choose a truck</li>
+                <li class="scrip"><b>Made labeling on truck icons easier to understand</b> <i>(middle panel of wireframe)</i> : Instead of having the trucks with just their numbers on it and relying on a legend at the bottom of the map to explain what the numbers mean, we decided to eliminate the legend and label the trucks with the wait time in minutes on it. For example, instead of “15”, a sample truck would have “15 min” on the center of the icon.</li>
+                <li class="scrip"><b>Distance</b> <i>(right panel of wireframe)</i> : Cognizant that users care more about the time needed to get their meals rather than the distance they have to travel to get their food, we made distance a preference on our ﬁlter rather than a feature we have on the front page of the map.</li>
+                <li class="scrip"><b>Tutorial Screen</b> <i>(righthand side)</i>: We added a tutorial screen so users, before they open the app, will understand what the numbers mean and what a truck in green-colored text represents. With that in mind, users will have a better experience using the website to ﬁnd a truck that ﬁts their needs, whether it is dietary, time-wise, etc</li>
+            </ul>
+        </div>
+        
+        <!-- final iteration -->
+        <div class="row sec">
+            <div class="col-md-12">
+                <h2 class="title" id="final">Final Iteration</h2>
+                <p class="scrip">Following these changes, we decided to create desktop prototypes, in addition to mobile ones, of the web application. Though panels of the final responsive web application are shown below, <mark>an interactive desktop version of the prototype can be accessed <a href="https://xd.adobe.com/view/b6b879d2-8057-43f9-6118-8e1c9628933c-c089/"><b>here</b></a>. The mobile interactive version of the prototype can be accessed <a href="https://xd.adobe.com/view/31ff078b-6932-46c8-4061-b0ceed48a652-47ce/?fbclid=IwAR3drmusHrghmxSC0SBzrNzsmkkL2yanB1wcCNclI4WoyG3gn8EL-6FdJo4"><b>here</b></a>.</mark></p>
+                <h3 class="steps" style="margin-top: 2.5%">Mobile Version</h3>
+                
+                <!-- slideshow code from www3schools -->
+                <!-- Slideshow container for mobile iteration-->
+                <div class="slideshow-container" id="s2">
+
+                  <!-- Full-width images with number-->
+                  <div class="mySlides2 fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="img/final1.PNG" style="width:100%; margin-top: 30px;" alt="first panel of final mobile iteration">
+                  </div>
+
+                  <div class="mySlides2 fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="img/final2.PNG" style="width:100%; margin-top: 30px;" alt="second panel of final mobile app iteration">
+                  </div>
+
+                  <div class="mySlides2 fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="img/final3.PNG" style="width:100%; margin-top: 30px;" alt="third panel of final mobile app iteration">
+                  </div>
+
+                  <!-- Next and previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                  <span class="dot2" onclick="currentSlide(1, 1)"></span>
+                  <span class="dot2" onclick="currentSlide(2, 1)"></span>
+                  <span class="dot2" onclick="currentSlide(3, 1)"></span>
+                </div>
+                
+                <h3 class="steps" style="margin-top: 2.5%">Desktop Version</h3>
+                
+                <div class="slideshow-container" id="s3">
+
+                  <!-- Full-width images with number-->
+                  <div class="mySlides3 fade">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="img/desktop1.PNG" style="width:100%; margin-top: 30px;" alt="first panel of final desktop iteration">
+                  </div>
+
+                  <div class="mySlides3 fade">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="img/desktop2.PNG" style="width:100%; margin-top: 30px;" alt="second panel of final desktop app iteration">
+                  </div>
+
+                  <div class="mySlides3 fade">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="img/desktop3.PNG" style="width:100%; margin-top: 30px;" alt="third panel of final desktop app iteration">
+                  </div>
+                    
+                  <div class="mySlides3 fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="img/desktop4.PNG" style="width:100%; margin-top: 30px;" alt="fourth panel of final desktop app iteration">
+                  </div>
+                  
+                  <div class="mySlides3 fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="img/desktop5.PNG" style="width:100%; margin-top: 30px;" alt="fifth panel of final desktop app iteration">
+                  </div>
+                    
+                  <div class="mySlides3 fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="img/desktop6.PNG" style="width:100%; margin-top: 30px;" alt="sixth panel of final desktop app iteration">
+                  </div>
+
+                  <!-- Next and previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                  <span class="dot3" onclick="currentSlide(1, 2)"></span>
+                  <span class="dot3" onclick="currentSlide(2, 2)"></span>
+                  <span class="dot3" onclick="currentSlide(3, 2)"></span>
+                  <span class="dot3" onclick="currentSlide(4, 2)"></span>
+                  <span class="dot3" onclick="currentSlide(5, 2)"></span>
+                  <span class="dot3" onclick="currentSlide(6, 2)"></span>
+                </div>
+                
+                <!-- js for three previous slide shows-->
+                <script>
+
+                var slideIndex = [1, 1, 1];
+                var slideId = ["mySlides1", "mySlides2", "mySlides3"]
+                var dotId = ["dot1", "dot2", "dot3"]
+                showSlides(1, 0);
+                showSlides(1, 1);
+                showSlides(1, 2);
+
+                function plusSlides(n, no) {
+                  showSlides(slideIndex[no] += n, no);
+                }
+
+                function currentSlide(n, no) {
+                  showSlides(slideIndex[no] = n, no);
+                }
+
+                function showSlides(n, no) {
+                  var i;
+                  var x = document.getElementsByClassName(slideId[no]);
+                  var dots = document.getElementsByClassName(dotId[no]);
+                  if (n > x.length) {slideIndex[no] = 1}    
+                  if (n < 1) {slideIndex[no] = x.length}
+                  for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  x[slideIndex[no]-1].style.display = "block";
+                  dots[slideIndex[no]-1].className += " active";
+                }
+                </script>
+            </div>
+        </div>
+        
+        <!-- final thoughts -->
+        <div class="row sec">
+            <div class="col-md-12">
+                <h2 class="title">Next Steps + Takeaways</h2>
+                <p class="scrip">If given more time to complete the project, we would add the following features:</p>
+                <ul>
+                    <li class="scrip">Payment directly from responsive web application</li>
+                    <li class="scrip">Suggestions of where people eat after receiving food from specific vendor</li>
+                </ul>
+                <p class="scrip">Overall, the project taught me the importance of user testing since different sets of eyes understand features differently. For instance, the lack of explanation for any number we included confused those that tested our wireframes. Explanations, especially on tutorials and legends, should be straightforward as well, since users want to gain the information in a quick and easy manner.</p>
+                <p class="scrip">As a team, we learned how to pitch a product as a team and design a presentation to fit that pitch. Because we received research results from a different team, we learned how to aggregate valuable data from unfamiliar research results to develop a design direction and product idea.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-bottom: 3%">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="worth.html"><p style="font-size: 24px">&#10094; Worth It</p></a>
+            </div>
+            <div class="col-md-6">
+                <a href="gamedesign.html"><p style="font-size: 24px; text-align: right">Game Design Course Dashboard &#10095;</p></a>
+            </div>
+        </div>
+        <div class="row sec">
+            <div class="col-md-12">
+                <div class="soc-links">
+                    <a href="https://www.linkedin.com/in/andrewlchuang/" class="fa fa-linkedin"></a>
+                    <a href="mailto:andrew.l.chuang@gmail.com" class="fa fa-envelope-open"></a>
+                    <a href="https://vsco.co/andrewlchuang/gallery" class="fa fa-camera"></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <p style="text-align: center; font-size: 14px;">Developed by Andrew Chuang 2020</p>
+        </div>
+    </div>
+</body>
+</html>
+        

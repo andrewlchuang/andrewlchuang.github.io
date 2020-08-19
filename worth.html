@@ -1,0 +1,193 @@
+<html lang="en">
+<html>
+<head>
+    <title>Worth It?</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="All about data project that aims to understand value of a college education">
+    <meta name="author" content="Andrew Chuang">
+    
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"> </script>
+    
+    <!-- fa fa icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- own customizations-->
+    <link rel="stylesheet" type="text/css" href="front.css">
+</head>
+<body>
+    
+    <!-- navigation element-->
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">🌏</a>
+        </div>
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="ACpfResume.pdf">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- cover photo -->
+    <!-- real intro -->
+    <div class="container header">
+        
+        <!-- cover photo -->
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="wrap-img">
+                <img class="intro-photo hover-photo" src="img/college%20scorecard%20cover.png" alt="Cover photo for Worth It Data Science Project">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: Image of the US Department of Education College Scorecard page. We performed exploratory data analysis primarily on information from the site.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- overview-->
+        <div class="row overview">
+                <div class="col-md-12 col-sm-12">
+                    <h1 class="project-title">Worth It: Understanding the Value of a College Education</h1>
+                    <p class="description">Spring 2020 | 2 Weeks </p>
+                    <p class="background-info">Let's face it: college, for most individuals, is an expensive investment. For instance, tuition at Carnegie Mellon without financial aid is over $55,000. College tuition overall has increased over 25 percent in the past 10 years and student debt, just between 2018-2019, has increased over 6 percent (CNBC). Thus, the value of a college education must be evaluated before making such a life-changing decision.</p>
+                    <p class="background-info">Return on investment (ROI) is often used to determine the value of a college education. In this exploratory data analysis project, <b>Catherine Du</b> and I wanted to take a deeper dive into what factors increases the ROI of a certain college education. Specifically, we wanted to answer the following questions:</p>
+                    <ul>
+                        <li class="scrip" style="font-weight: bold;">Does a school’s ranking increase the value traditionally lower-paying majors?</li>
+                        <li class="scrip" style="font-weight: bold;">Do majors in high demand get paid well regardless of institution?</li>
+                        <li class="scrip" style="font-weight: bold;">What is the relationship between starting salary, debt, and location of a school?</li>
+                    </ul>
+                    <p class="more-info">This project was done for the Practical Data Science course (67-364) at Carnegie Mellon. <mark>To skip directly to the final deliverable, please click <b><a href="#final">here</a></b>.</mark></p> 
+                </div>
+        </div>
+        
+        <!-- role I played-->
+        <div class="row role">
+            <div class="col-md-12 col-sm-12">
+                <h2 class="title">My Role</h2>
+                <p class="role-description">In this project, I was a <b>Data Visualizer</b> and used Tableau to visualize trends and relationships. In addition, I helped clean and process the data for explortory data analysis with Pandas.</p>
+            </div>
+        </div>
+        
+        <!-- process overview-->
+        <div class="row sec">
+            <div class="col-md-12">
+                <h2 class="title">Process Overview</h2>
+                <p class="scrip">To analyze our data, we first had to transfrom the raw data into a form that could be readily used and analyzed. The diagram below shows how we cleaned/prepared the data using the Pandas library in Python. Note that though there are many ways to calculate ROI, we used debt to starting salary ratio as our metric since both debt and starting salary are numerical factors that influence the financial wellness of college graduates.</p>
+                <img src="img/Data%20Processing.png" alt="process diagram that shows how we transformed the raw data" style="max-width: 100%">
+            </div>
+        </div>
+        
+        <!--results-->
+        <div class="row sec" id="final">
+            <div class="col-md-12">
+                <h2 class="title">Results</h2>
+                <p class="scrip">To answer our three questions, we performed exploratory data analysis on our cleaned dataset. Here are some of our findings:</p>
+                
+                <!--findings number 1-->
+                <p style="font-weight: 500; margin-top: 2%; font-size: 25px">On average, the higher the prestige, the lower the debt-to-salary ratio</p>
+                <div class="wrap-img">
+                    <img src="img/DS%20Ratio%20Overall.png" style="max-width: 100%; margin: 20px 0px 20px 0px;" alt="bar graph showing the average debt-to-salary ratio of college groups" class="hover-photo">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: Bar graph of average debt-to-salary (DS) ratio plotted by college group. Top Non-Ivy schools are the top 30 ranked schools listed by the US News Rankings 2019. Note that the average DS ratio for Ivy League schools is almost half of that of schools in the 'other' category.</p>
+                    </div>
+                </div>
+                <div class="wrap-img">
+                    <img src="img/scatplot%20ds.png" style="max-width: 100%; margin: 20px 0px 20px 0px;" alt="scatterplot showing avg debt vs avg earnings" class="hover-photo">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: Scatterplot showing colleges plotted on average debt and average earnings. While we had over ~2000 colleges in our dataset, we randomly selected 200 for this scatterplot. Note that higher ranked institutions are aggregated to the left/top left of the graph (in the purple oval), indicating that even with similar debt amounts, students from these institutions, on average, had higher starting salaries.</p>
+                    </div>
+                </div>
+                
+                <!-- findings number 2-->
+                <p style="font-weight: 500; margin-top: 2%; font-size: 25px">STEM students, on average, are paid well regardless of institution. However, humanities majors at Ivy League institutions can outearn STEM students at other institutions</p>
+                <div class="wrap-img">
+                    <img src="img/Cat%20vs%20Salary.png" style="max-width: 100%; margin: 20px 0px 20px 0px;" alt="bar graph showing the average salary, grouped by humanities vs stem and college group" class="hover-photo">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: Bar graph of average salary plotted by major type and college group. Note that average non-STEM salary at Ivy League institutions is, on average, higher than that of STEM salaries in Liberal Arts/other institutions, as noted by the purple line.</p>
+                    </div>
+                </div>
+                <div class="wrap-img">
+                    <img src="img/Cat%20v%20DS.png" style="max-width: 100%; margin: 20px 0px 20px 0px;" alt="bar graph showing the average debt-to-salary ratio, grouped by humanities vs stem and college group" class="hover-photo">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: Bar graph of average debt-to-salary ratio plotted by major type and college group. Note that average non-STEM debt-to-salary ratio at higher ranked institutions is, on average, higher than that of STEM DS ratios in Liberal Arts/other institutions, as noted by the purple line.</p>
+                    </div>
+                </div>
+                
+                <!--findings number 3-->
+                <p style="font-weight: 500; margin-top: 2%; font-size: 25px">Students who attend institutions in California or the Northeast, on average, have the lowest debt-to-salary ratio</p>
+                <div class="wrap-img">
+                    <img src="img/New%20Mep.png" style="max-width: 100%; margin: 20px 0px 20px 0px;" alt="map showing regional debt-to-salary ratios" class="hover-photo">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: Map showing regional debt-to-salary ratios, with the California/Northeast with the lowest ratios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--analysis-->
+        <div class="row sec">
+            <div class="col-md-12">
+                <h2 class="title">Analysis</h2>
+                <p class="scrip">To place the numbers and results in context, here are some factors that explain the findings:</p>
+                <ul>
+                    <li class="scrip">It is commonly believed that selective colleges offer <a href="https://www.huffpost.com/entry/private-colleges-_b_1974948">more connections and a stronger alumni network</a> compared with other institutions. However, even with that aside, that selective colleges are <a href="https://www.cnbc.com/2019/03/22/college-applicants-from-families-in-the-1-percent-have-a-big-edge.html">composed of more students from the top one percent than the bottom twenty</a>. Richer students tend to <a href="https://www.theguardian.com/money/2016/apr/13/richer-students-have-higher-graduate-income-study-finds">have higher salaries </a>post-graduation, compared with other peers.</li>
+                    <li class="scrip"><a href="https://www.gse.harvard.edu/news/uk/18/11/college-major-myths">Shortage of STEM skills</a> leads to a higher demand for people that have these skills, thus higher starting salaries for those majoring in STEM.</li>
+                    <li class="scrip">Many cities that have the highest salaries are concentrated on <a href="https://www.businessinsider.com/best-places-to-live-in-america-for-a-high-salary-2016-3">the Northeast and California</a>. However, these areas also have the <a href="https://www.investopedia.com/articles/personal-finance/080916/top-10-most-expensive-cities-us.asp">highest cost of living</a> in the country.</li>
+                </ul>
+                <p class="scrip">These numbers, or even the explanations above, don't paint the whole picture of the college landscape. Here are some considerations that need to made when building upon these results:</p>
+                <ul>
+                    <li class="scrip">One major confounding variable was the way in which we calculated the debt-to-salary ratio. After making the corresponding groups on Pandas and given the way the dataset was structured, we took the average of the median salaries and debt amounts for each major. Thus, when calculating debt and salary in this manner, we made the assumption that there was an equal number of students in each major.</li>
+                    <li class="scrip">Though value can be determined by looking at the numbers, such as looking at the average debt and salary post-grad, we also need to look at qualitative factors as well. Existence of the right communities, 'fit', campus climate, and overall college satisfaction are just some of these factors that creates value in a college experience.</li>
+                    <li class="scrip">Though liberal arts degrees don't offer high-paying starting salaries when compared to STEM majors, studies show that individuals with a liberal arts background tend to have <a href="https://www.gse.harvard.edu/news/uk/18/11/college-major-myths">higher mid-career wage growth</a> compared with those with a STEM background. In sum, one should study in a field that they are fascinated and interested in, big-picture wise.</li> 
+                </ul>
+            </div>
+        </div>
+        
+        <!--takeaways-->
+        <div class="row sec">
+            <div class="col-md-12">
+                <h2 class="title">Takeaways</h2>
+                <p class="scrip">If given more time on this project, we would build upon our findings by doing the following:</p>
+                <ul>
+                    <li class="scrip">Find different ways to calculate ROI</li>
+                    <li class="scrip">Determine the effects in-state vs out-of-state and income levels have on debt and salary</li>
+                </ul>
+                <p class="scrip">Overall, this project re-emphasized how important exploratory data analysis is since there are many insights that can be drawn just simply by grouping and visualizing the data. I was able to refine my skills in Pandas and Tableau throughout the course of the project and had many assumptions about the college landscape as a whole challenged throughout the process.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-bottom: 3%">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="ucre.html"><p style="font-size: 24px">&#10094; Bolstering Personal Connections with Public Arts</p></a>
+            </div>
+            <div class="col-md-6">
+                <a href="foodtruck.html"><p style="font-size: 24px; text-align: right">Food Truck Responsive Web Design &#10095;</p></a>
+            </div>
+        </div>
+        <div class="row sec">
+            <div class="col-md-12">
+                <div class="soc-links">
+                    <a href="https://www.linkedin.com/in/andrewlchuang/" class="fa fa-linkedin"></a>
+                    <a href="mailto:andrew.l.chuang@gmail.com" class="fa fa-envelope-open"></a>
+                    <a href="https://vsco.co/andrewlchuang/gallery" class="fa fa-camera"></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <p style="text-align: center; font-size: 14px;">Developed by Andrew Chuang 2020</p>
+        </div>
+    </div>
+</body>
+</html>

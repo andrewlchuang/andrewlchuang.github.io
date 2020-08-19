@@ -1,0 +1,379 @@
+<html lang="en">
+<html>
+<head>
+    <title>Game Design Course Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="All about game design course dashboards that serves needs of instructors and student listeners">
+    <meta name="author" content="Andrew Chuang">
+    
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"> </script>
+    
+    <!-- fa fa icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- own customizations-->
+    <link rel="stylesheet" type="text/css" href="front.css">
+</head>
+<body>
+    
+    <!-- navigation element-->
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">🌏</a>
+        </div>
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="ACpfResume.pdf">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- cover photo -->
+    <!-- real intro -->
+    <div class="container header">
+        
+        <!-- cover photo -->
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="wrap-img">
+                <img class="intro-photo hover-photo" src="img/dashboard%20port%20cover.png" alt="Cover photo for responsive web page project">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: Instructor view of the game design course dashboard where some functionalities include being able to moderate discussion + feedback</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- overview-->
+        <div class="row overview">
+                <div class="col-md-12 col-sm-12">
+                    <h1 class="project-title">Game Design Course Dashboard</h1>
+                    <p class="description">Fall 2019 | 3 Weeks </p>
+                    <p class="prompt">"How might we design dashboards that enable students and instructors to give effective feedback for in-class presentations?"</p>
+                    <p class="background-info">In a classroom, everyone is there to learn and get feedback. Students want to learn more about game design, for example, and receive suggestions on how to improve their skills. Instructors want to know how well they are relaying the content such that they can achieve students' learning goals. However, there are roadblocks that prevent students and insturctors from getting the feedback needed, especially during presentations: students are easily distracted, instructors how well students have grasped the information.</p>
+                    <p class="background-info">To enable streamlined viewing and giving of feedback during a presentation, I created dashboards with two modes:</p>
+                    <ul>
+                        <li class="scrip"><b>Student Mode</b>: Dashboard in students can provide real-time feedback to presenters and upvote other individuals’ comments</li>
+                        <li class="scrip"><b>Instructor Mode</b>: Provide real-time feedback during presentation and monitor comments from rest of students</li>
+                    </ul>
+                    <p class="more-info">This project was done for the Interaction Design Overview Course (05-392) at Carnegie Mellon. <mark>To skip directly to the final deliverable, please click <b><a href="#final">here</a></b>.</mark></p>
+                </div>
+        </div>
+        
+        <!-- role I played-->
+        <div class="row role">
+            <div class="col-md-12 col-sm-12">
+                <h2 class="title">My Role</h2>
+                <p class="role-description">In this individual project, I was a <b>User Experience Designer</b> and performed tasks related to the following: user-interface design, prototyping, and animation.</p>
+            </div>
+        </div>
+        
+        <!-- process overview-->
+        <div class="row sec">
+            <div class="col-md-12">
+                <h2 class="title">Process Overview</h2>
+                <p class="scrip">The following lists what I've done in order to reach my final dashboard designs: <a href="#understand">understanding the users</a>, making <a href="#rough">rough concept sketches</a> that later turned into <a href="#bw">black-and-white digital sketches</a> and <a href="#color">digital color sketches</a>.</p>
+            </div>
+        </div>
+        
+        <!-- understanding our users-->
+        <div class="row sec" id="understand">
+            <div class="col-md-12">
+                <h2 class="title">Understanding Our Users</h2>
+                <p class="scrip">Though only two dashboards were needed at the end, the dashboard was created around the needs of three types of users: student listeners, student presenters, and insturctors. Since each group has their own needs, I started off by creating an empathy map of the three groups. In this map, I included group feelings, actions, goals, pain points, and influences.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="wrap-img">
+                    <img src="img/persona%20overview.jpg" alt="personas of individuals in classroom" class="hover-photo" style="margin-top: 50px;">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: Personas of three individuals (one from each group) in the classroom, each with different objectives during the presentation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="wrap-img">
+                    <img src="img/empathy%20maps.jpg" alt="empathy maps created for listeners, presenters, and instructors" class="hover-photo" style="border-radius: 5px; margin-bottom: 20px; margin-top: 20px;">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: Empathy maps created for the three different groups.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="scrip">Despite having different goals, these groups had some needs and fears that were quite similar. Thus, I created a Venn Diagram between the three groups. Though our diagram doesn’t have everything they share, the image below reflects a significant amount of their commonalities/similarities. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="wrap-img">
+                    <img src="img/dashboard%20venn.PNG" alt="venn diagram between three groups: listeners, presenters, and instructors" class="hover-photo" style="max-height: 30%;">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: Venn diagram between three groups: listeners, presenters, and instructors</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        
+        <!-- rough concept sketches -->
+        <div class="row sec" id="rough">
+            <div class="col-md-12">
+                <h2 class="title">Rough Concept Sketches</h2>
+                <p class="scrip">After mapping and diagraming the needs, pain points, and goals of the three groups, I wanted my rough sketches to focus on the following:</p>
+                <ul>
+                    <li class="scrip"><b>Simplicity</b>: I wanted the dashboards to be as simple as possible such that users can shift their focus towards the content of the presentation.</li>
+                    <li class="scrip"><b>Filtering</b>: Having a good filtering system would enable users to give/receive targeted feedback, enabling them to improve upon weaknesses.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="wrap-img">
+                    <img src="img/dashboard%20rough%20sketch%201.PNG" alt="rough sketch of the listener version of the dashboard" class="hover-photo" style="margin-top: 20px;">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: Listener version of the dashboard sketch. Users would use an access code which enabled them to comment on the slides directly. If a listener had a comment, or a question, on a topic, they would just comment on it directly. The main focus of the design was on the presentation, and the users ability to dynamically interact with what was written, spoken verbally, and what all members of the class thought.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="wrap-img">
+                    <img src="img/dashboard%20rough%20sketch%202.PNG" alt="rough sketch of the listener version of the dashboard" class="hover-photo" style="margin-top: 20px;">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: Instructor version of the dashboard sketch. Design rationale was similar to that of the listener version with additional features: instructors are able to comment on other comments to ensure comments are appropriate and beneficial to the presenters, and see user-names on comments to understand mastery of concepts from each individual student</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="scrip" style="margin-top: 20px;">Here is some feedback I have received after the first round of critiques:</p>
+                <ul>
+                    <li class="scrip">The entire dashboard should not be presentation-focused since it takes away attention from what speakers are actually saying</li>
+                    <li class="scrip">My dashboards placed a heavy emphasis on simplicity which is good, since it eliminates distractions, but also lacks core functionalities and might cause listeners to fall asleep and not be engaged.</li>
+                </ul>
+                <p class="scrip">Knowing that I should work on these points, the main concern at the moment was balancing functionality and aesthetic. This will be a topic my black and white dashboard will aim to address. </p>
+            </div>
+        </div>
+        
+        <!-- bw sketches -->
+        <div class="row sec" id="bw">
+            <div class="col-md-12">
+                <h2 class="title">Black and White Digital Sketches</h2>
+                <p class="scrip">I learned the need to balance functionality and simplicity through feedback from my last sketches. By utilizing typography and the grid types, like the golden section, I was able to add more functionality without sacrificing making the design too complex.</p>
+                <h3 class="steps" style="margin-top: 2.5%">Listener Version</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="wrap-img">
+                    <img src="img/bw%20listener%201.PNG" alt="listener dashboard, section where users can give general feedback" class="hover-photo" style="margin-top: 20px;">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: Home page of the listener dashboard, in which users can give general feedback to presenters</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="wrap-img">
+                    <img src="img/bw%20listener%202.PNG" alt="listener dashboard, section where users can give tips on specific questions presenters may have" class="hover-photo" style="margin-top: 20px;">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: Team questions page of the listener dashboard. Users can give answers to team questions presenters may have.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="wrap-img">
+                    <img src="img/bw%20listener%203.PNG" alt="listener dashboard, section where users can give feedback on specific topics" class="hover-photo" style="margin-top: 20px;">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: Topic page of the listener dashboard. Users can give feedback on specific topics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="scrip" style="margin-top: 20px;">This time, my design had a really clear point of entry. The contrast between the black sidebar and the white background allowed for both sections to be emphasized. The gray text box welcomed users to add in their own thoughts, opinions on the presentation as a whole. The black sidebar encouraged users to add category-specific feedback to those sections, as well as answers to the presenters questions. The design had core functionalities and allowed listeners to give feedback and listen to what the presenters are saying.</p>
+                <p class="scrip">In addition, I shifted the focus of the dashboard from it being presentation-focused to topic-focused. Having additional pages where users can either give topic-specific feedback or help answer greatly improves the functionality of the dashboard, as listeners are motivated to give targeted feedback to the presenters.</p>
+                <h3 class="steps" style="margin-top: 2.5%">Instructor Version</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="wrap-img">
+                    <img src="img/bw%20instructor%201.PNG" alt="instructor dashboard, section where instructors can give general feedback" class="hover-photo" style="margin-top: 20px;">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: Home page of the instructor dashboard, in which they can give general feedback to presenters</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="wrap-img">
+                    <img src="img/bw%20instructor%202.PNG" alt="instructor dashboard, section where instructors can moderate dicussions around a certain topic" class="hover-photo" style="margin-top: 20px;">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: Topic page of the instructor dashboard, in which they can moderate dicussions around a certain topic</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="scrip">The design rationale for the instructor view was pretty much the same as that for the student view. There are several key differences:</p>
+                <ul>
+                    <li class="scrip">Instructors can give general comments and see each student’s general comments. Based on that feedback, the instructor can tell whether students have mastered the material or not. </li>
+                    <li class="scrip">To allow instructors to facilitate the flow of discussion, instructors can add topics to the bar of the conversation.</li>
+                    <li class="scrip">Instructors have the power to endorse comments and give general feedback. However, they cannot give topic-specific feedback since it allows for instructors to observe how conversations are going naturally, showing knowledge of concepts learned in class.</li>
+                </ul>
+                <h3 class="steps" style="margin-top: 2.5%">Feedback Received</h3>
+                <p class="scrip">Here’s what I learned from direct student feedback and inspirations from other presenters during critiques:</p>
+                <ul>
+                    <li class="scrip">Many features/tabs on website = high chance of distraction. Putting all the information in one spot or place will get the point across and make dashboard easier to use, as functionalities are located all in one spot.</li>
+                    <li class="scrip">The incorporation of analytics and gauge to see which students were active/inactive is really beneficial for the instructor. This included graphs, statistics, percentages.</li>
+                    <li class="scrip">Things I should continue to do that day: grayed out text box asking for general feedback, endorse/likes, black-white layout. </li>
+                </ul>
+                <p class="scrip">In all, what I learned from critiques was that simplicity was a good choice to make, but it is now time to bring all the functionalities together to make an accessible and non-distracting dashboard.</p>
+            </div>
+        </div>
+        
+        <!-- color sketches -->
+        <div class="row sec" id="color">
+            <div class="col-md-12">
+                <h2 class="title">Color Digital Sketches</h2>
+                <p class="scrip">While I added color at this stage of the process, my main goal was to refine and bring the functionalities that spanned many pages together into one dashboard each.</p>
+                <h3 class="steps" style="margin-top: 2.5%">Listener Version</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="wrap-img">
+                    <img src="img/color%20listener.PNG" alt="color sketch version of the listener dashboard" class="hover-photo" style="max-width: 100%; margin-top: 20px; margin-bottom: 20px;">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: Color sketch of the listener dashboard. This time around, I made sure the features all in one page to limit distractions users may have during the presentation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+            <p class="scrip">In terms of color, I decided to go with lighter, duller, shades of blue  since it emphasizes text without becoming too distracting and powerful. I chose shades of light blue for instructor-endorsed comments since it popped out out of the shades of white and black, allowing it to be emphasized just the right amount. Darker shades went well with text embellishments, as it paired well with the black text and white background.</p>
+            <p class="scrip">In terms of the black side bar, I added two features: livestream of comments and questions to consider. Comments from all students will appear on this bar, and students can search through them using the search bar or, they can swipe right to like the comments. The questions are also on the side bar so students can think about the questions throughout the presentation, and answer them as the presentation progresses. </p>
+            <h3 class="steps" style="margin-top: 2.5%">Instructor Version</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="wrap-img">
+                    <img src="img/color%20instructor.PNG" alt="color sketch version of the instructor dashboard" class="hover-photo" style="max-width: 100%; margin-top: 20px; margin-bottom: 20px;">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: Color sketch of the instructor dashboard. This time around, I added analytics and information on students that have not participated as much yet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+            <p class="scrip">Inspired by the insights incorporating analytics can bring, I decided to incorporate some here as well. On the black side bar, I added users that have not yet engaged as much. This gives the instructor a chance to check in with those that may be distracted, not engaged, or lost. The second section I added was the common keywords: it allows the instructor to peruse through topics that students are frequently mentioning in their responses. The size of the word correlates to how frequently the word was mentioned.</p>
+            <p class="scrip">In terms of the content in the white box, it is split evenly between seeing what comments should be endorsed and a place where general feedback can be given. I figured that as an instructor, they do both conversation moderation and feedback-giving as well, explaining the need to split the section evenly.</p>
+            <p class="scrip">These designs allowed for most core functionalities to exist in one spot while keeping the dashboard simple and usable, which is an improvement from the last one which had many tabs and features.</p>
+            <h3 class="steps" style="margin-top: 2.5%">Feedback Received</h3>
+            <p class="scrip">At this stage of the process, I received the following tips to improve the aesthetics and functionality of the dashboards:</p>
+            <ul>
+                <li class="scrip">The placement of the black side bar was not consistent and did not make sense. The viewer’s attention is first directed to the white box on one version and in another version, it is directed to the black box first. </li>
+                <li class="scrip">Adding category tabs to each comment will allow grouping of comments to happen more easily/accessibly</li>
+                <li class="scrip">A lot of the text is too thin, not readable</li>
+            </ul>
+            </div>
+        </div>
+        
+        <!-- final dash-->
+        <div class="row sec" id="final">
+            <div class="col-md-12">
+                <h2 class="title">Final Designs</h2>
+                <h3 class="steps" style="margin-top: 2.5%">Listener Version</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="wrap-img">
+                    <img src="img/student%20dashboard.PNG" alt="final design of the listener dashboard" class="hover-photo" style="max-width: 100%; margin-top: 20px; margin-bottom: 20px;">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: Final design of the listener dashboard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="steps" style="margin-top: 2.5%">Instructor Version</h3>
+                <div class="wrap-img">
+                    <img src="img/instructor%20view.PNG" alt="final design of the instructor dashboard" class="hover-photo" style="max-width: 100%; margin-top: 20px; margin-bottom: 20px;">
+                    <div class="hvr">
+                        <p class="img-descr"><b>Caption</b>: Final design of the instructor dashboard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+            <h3 class="steps" style="margin-top: 2.5%">Animated Versions</h3>
+            <p class="scrip">Listener version to the left, instructor to the right.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/student%20view1.gif" alt="animated version of listener dashboard" style="max-width: 100%; margin-top: 20px; margin-bottom: 20px;">
+            </div>
+            <div class="col-md-6">
+                <img src="img/instructor%20view1.gif" alt="animated version of instructor dashboard" style="max-width: 100%; margin-top: 20px; margin-bottom: 20px;">
+            </div>
+        </div>
+        
+        <!-- next steps and takeaways-->
+        <div class="row sec">
+            <div class="col-md-12">
+                <h2 class="title">Next Steps + Takeaways</h2>
+                <p class="scrip">Moving forwards, I would love to incorporate data visualizations and graphics that display student activity throughout duration of presentation and the robustness of comments in the instructor view of the dashboards.</p>
+                <p class="scrip">Throughout the process, I learned how colors contrasts and grid layouts can direct the focus of users. Though it took me a while to understand how to leverage these these tools, using them effectively can establish clear points of entry and continuous flow throughout the dashboard, allowing their needs to be met in an efficient and easy manner.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-bottom: 3%">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="foodtruck.html"><p style="font-size: 24px">&#10094; Food Truck Responsive Web Design</p></a>
+            </div>
+            <div class="col-md-6">
+            </div>
+        </div>
+        <div class="row sec">
+            <div class="col-md-12">
+                <div class="soc-links">
+                    <a href="https://www.linkedin.com/in/andrewlchuang/" class="fa fa-linkedin"></a>
+                    <a href="mailto:andrew.l.chuang@gmail.com" class="fa fa-envelope-open"></a>
+                    <a href="https://vsco.co/andrewlchuang/gallery" class="fa fa-camera"></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <p style="text-align: center; font-size: 14px;">Developed by Andrew Chuang 2020</p>
+        </div>
+    </div>
+</body>
+</html>
