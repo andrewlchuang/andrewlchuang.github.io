@@ -1,0 +1,367 @@
+/* text in general */
+h1, h2, h3, p, li{
+    font-family: Roboto;
+    font-style: normal;
+}
+
+/* nav bar */
+.navbar-brand{
+    font-size: 30px;
+}
+
+.navbar-default {
+    background-color: white;
+    border: 0;
+    margin-top: 25px;
+   	margin-left: 8%;
+   	margin-right: 8%;
+    margin-bottom: 25px;
+}
+
+.navbar-default .navbar-nav>li {
+	font-size: 16px;
+	margin-left: 35px;
+	margin-right: 0px;
+	padding-right: 0px;
+    margin-top: 10px;
+}
+
+.navbar-nav>li:hover{
+    font-weight: bold;
+    color: black;
+}
+#active{
+    color: mediumseagreen;
+}
+
+/* fa bar social links */
+.fa{
+    padding: 20px;
+   font-size: 20px;
+    color: black;
+}
+
+.soc-links{
+    text-align: center;
+}
+
+/*header stuff*/
+.header{
+    margin-bottom: 4%;
+}
+
+/* header text*/
+h1{
+    font-weight: normal;
+    font-size: 48px;
+}
+
+#andrew{
+    color: #1187F3;
+}
+
+#intro{
+    font-weight: normal;
+    font-size: 24px;
+}
+
+
+/* about section */
+.img-personal{
+    max-width: 100%;
+    border-radius: 10px;
+    height: 600px;
+}
+
+.about-me{
+    font-size: 16px;
+}
+
+h1.about-me{
+    font-size: 32px;
+    margin-top: 0px;
+}
+
+#major:hover{
+    text-decoration: underline;
+}
+
+/* projects */
+.ctnr{
+    margin-bottom: 6.5%;
+}
+
+.img-overview {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.img-overview:hover{
+    box-shadow: 5px 5px 3px 0 rgba(0,0,0,0.2);
+    transform: scale(1.03);
+}
+
+
+/* text in projects */
+.name{
+    font-weight: bold;
+    margin-bottom: 0;
+    font-size: 24px;   
+}
+
+.proj-type{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 0;
+    opacity: 50%;
+}
+
+.what{
+    font-size: 18px;
+    margin: 40px 0px 40px 0px;
+}
+
+.proj-link{
+    border-bottom: 5px;
+    font-size: 18px;
+    margin-top: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.proj-link:hover{
+    text-decoration: underline;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+/* each project page */ 
+.intro-photo{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.project-title{
+    font-size: 40px;;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.description{
+    font-size: 16px;
+    color: darkgrey;
+    margin-top: 0px;
+}
+
+.role-description, .background-info, .prompt, .overview, .process-description, p.methods, p.affinity-ucre,
+p.think-aloud-text, .storyboards-text, .results-description, .steps-significance, .steps-evidence, .steps-design,
+.takeaway-description, .scrip{
+    font-size: 18px;
+}
+
+.prompt{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.overview, .role, .process-overview, .results, .takeaways, .sec{
+    margin-top: 3%;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+a.anchor{
+    color: black;
+}
+
+a.anchor:hover{
+    text-decoration: none;
+}
+
+/* ucre */
+h3.methods, h3.steps{
+    margin-top: 0px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+img.wall-walk{
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+img.interview{
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+img.affinity-ucre{
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* methods spacing */
+.define-problem, .contextual, .think-aloud, .storyboards{
+    margin-top: 2.5%;
+}
+
+.attraction, .information, .conversation, .recollection{
+    margin-top: 2.5%;
+}
+
+
+.info-prototype, .convo-prototype, .recollection-prototype {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* slideshow code! from www3 schools */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides, .mySlides1, .mySlides2, .mySlides3 {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  text-decoration: none;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot, .dot1, .dot2, .dot3 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 10px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* testing */
+/* relevant styles */
+.wrap-img {
+  position: relative;
+}
+
+.hover-photo {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+ .hvr {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  bottom: 0%;
+  left: 1.5%;
+  right: 1.5%;
+  border: 0px;
+}
+
+
+.wrap-img:hover .hover-photo {
+  opacity: 0.3;
+}
+
+.wrap-img:hover .hvr {
+  opacity: 1;
+}
+
+.clic:hover{
+  opacity: 0.5;
+}
+
+
+.img-descr {
+  color: black;
+  font-size: 16px;
+}
+
+/* food truck */
+.venn{
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+}
