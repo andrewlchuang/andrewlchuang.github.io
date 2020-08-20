@@ -1,6 +1,6 @@
 /* text in general */
 h1, h2, h3, p, li{
-    font-family: Roboto;
+    font-family: Roboto, Lato, Tahoma, Sans-Serif;
     font-style: normal;
 }
 
