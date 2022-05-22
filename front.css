@@ -188,7 +188,9 @@ a.anchor:hover{
 h3.methods, h3.steps{
     margin-top: 0px;
     font-size: 25px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    font-weight: 600;
+    color: #808080;
 }
 
 img.wall-walk{
